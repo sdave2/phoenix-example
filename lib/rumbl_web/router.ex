@@ -16,6 +16,11 @@ defmodule RumblWeb.Router do
   scope "/", RumblWeb do
     pipe_through :browser
 
+    get "/users", UserController, :index
+    get "/users/:id", UserController, :show
+
+    ## Personal Test controller
+    get "/tests", TestController, :display
     get "/", PageController, :index
   end
 

@@ -1,1 +1,1 @@
-<string><%= first_name(@user) %></strong> (<%= @user.id %>)
+<strong><%= first_name(@user) %></strong> (<%= @user.id %>)

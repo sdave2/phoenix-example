@@ -1,0 +1,10 @@
+<h1> Listing Tests </h1>
+
+<table>
+  <%= for test <- @tests do %>
+      <tr>
+        <td><strong><%= test_name(test)%></strong></td>
+        <td><%= link "view", to: Routes.test_path(@conn, :show, test.id) %></td>
+      </tr>
+      <% end %>
+</table>

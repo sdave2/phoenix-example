@@ -56,3 +56,5 @@ npm-debug.log
 /installer/tmp
 /installer/doc
 /installer/deps
+
+*.#*

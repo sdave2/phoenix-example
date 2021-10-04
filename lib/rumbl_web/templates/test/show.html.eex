@@ -1,0 +1,10 @@
+<h1> Showing Test </h1>
+<table>
+  <tr>
+    <td><strong><%= @test.id%></strong></td>
+  </tr>
+</table>
+
+<div>
+  <%= link "ALL TESTS", to: Routes.test_path(@conn, :display) %>
+</div>

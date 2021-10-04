@@ -21,6 +21,7 @@ defmodule RumblWeb.Router do
 
     ## Personal Test controller
     get "/tests", TestController, :display
+    get "/tests/:id", TestController, :show
     get "/", PageController, :index
   end
 
